@@ -1,0 +1,14 @@
+//Reverse a List in dart
+
+void main(){
+  //creating list 
+  var orgList = [1,2,3,4,5,6];
+  print(orgList);
+  
+  //reversing the list
+  var objList = orgList.reversed;
+  
+  //creating a new List with the object
+  var revList = new List.from(objList);
+  print(revList);
+}
