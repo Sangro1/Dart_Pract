@@ -1,0 +1,15 @@
+void main(){
+  //crating a list
+  var orgList = [25,26,27,28,29];
+  print(orgList);
+  
+  //the loop iterates for half of the list
+  for(var i=0;i<orgList.length/2;i++){
+    //store the current index ina temp variable
+    var temp =orgList[i];
+    //add
+    orgList[i] = orgList[orgList.length-1-i];
+    orgList[orgList.length-1-i] = temp;
+  }
+  print(orgList);
+}
